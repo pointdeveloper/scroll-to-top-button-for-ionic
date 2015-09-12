@@ -1,0 +1,17 @@
+<ion-view view-title="Playlists">
+  <ion-content on-scroll="getScrollPosition()">
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+<div class="float-button" ng-show="sttButton" ng-click="scrollToTop()">
+  <span class="height-fix">
+    <a class="content">
+      <i class="ion-ios-arrow-up"> </i>
+    </a>
+  </span>
+</div>
+</ion-view>

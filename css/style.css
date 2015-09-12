@@ -1,0 +1,33 @@
+.float-button {
+
+background-color:#303f9f;
+  opacity: 0.9;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  /*border-radius:15% 0 0 0;*/
+  width: 30px;
+  padding: 25px;
+  font-size: 40px;
+  background: red;
+  position: fixed;
+  bottom: 50px; /* Adjust height */
+  right: 0px; /* Adjust position */
+  z-index: 1000;
+}
+
+.float-button .height_fix {
+  margin-top: 100%;
+}
+
+.float-button .content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px; 
+  color: white;
+}
