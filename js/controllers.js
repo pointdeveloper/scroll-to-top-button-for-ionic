@@ -59,13 +59,17 @@ $scope.scrollToTop = function() {//ng-click for back to top button
  //monitor the scroll
   var moveData = $ionicScrollDelegate.getScrollPosition().top;
   // console.log(moveData);
-    $scope.$apply(function(){
+    
       if(moveData>150){
-        $scope.sttButton=true;
+        $scope.$apply(function(){
+          $scope.sttButton=true;
+        });//apply
       }else{
+        $scope.$apply(function(){
           $scope.sttButton=false;
+        });//apply
       }
-    });//apply 
+    
   };//getScrollPosition
 })//PlaylistsCtrl
 
